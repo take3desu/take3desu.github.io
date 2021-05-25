@@ -65,7 +65,7 @@ ul{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   box-sizing: border-box;
   border-bottom: 1px solid #fff;
   width: 100%;
@@ -88,6 +88,7 @@ ul{
   padding: 10px 30px;
   width: 100%;
   transition: .3s;
+  z-index: 5;
 }
 
 .header a{
@@ -540,62 +541,6 @@ footer{
 }
 
 
-/* コンタクトフォーム */
-
-.contact-fv{
-  background-image: url(../img/contact-page-bgi@2x.jpg);
-  position: relative;
-  max-width: 100vw;
-  height: 50vh;
-  min-height: 550px;
-  z-index: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-.form-part{
-font-weight: bold;
-max-width: 700px;
-}
-
-.checkbox{
-font-weight: normal;
-}
-
-.main-form{
-  font-weight: bold;
-}
-
-.contact-copy{
-  position: absolute;
-  left: 40%;
-  bottom: 177px;
-  color: #fff;
-
-}
-
-.contact-title{
-  font-size: 70px;
-  font-weight: bold;
-  margin-bottom: 31px;
-  z-index: 3;
-}
-
-.form-part{
-display: flex;
-flex-direction: column;
-width: 700px;
-margin: 0 auto 20px;
-}
-
-.form-send{
-  margin-top: 70px;
-}
-
-.checkbox{
-  margin-right: 20px;
-}
-
 
 
 @media screen and (max-width: 1200px){
@@ -735,31 +680,6 @@ margin: 0 auto 20px;
     margin-bottom: 10px;
   }
 
-  /* contactフォーム */
-
-  .nav-list{
-    display: block;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-item{
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-style: italic;
-    margin: 0 0 40px;
-    padding: 0
-  }
-
-  /* メディアコンタクト */
-
-
-
 
 /* ハンバーガー */
 
@@ -831,6 +751,24 @@ margin: 0 auto 20px;
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+
+  .nav-list{
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-item{
+    margin: 0;
+    margin-bottom: 40px;
+    font-style: italic;
+  }
+
 
   .sp-nav{
     position: fixed;
