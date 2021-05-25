@@ -40,6 +40,10 @@ img{
   display: none;
 }
 
+li{
+  list-style-type: none;
+}
+
 .link-button{
   display: block;
   width: 235px;
