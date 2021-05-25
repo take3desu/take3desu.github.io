@@ -34,6 +34,7 @@ a{
 img{
   width: 100%;
   vertical-align: bottom;
+  object-position: 50% 0;
 }
 
 .sp-br{
@@ -267,7 +268,9 @@ ul{
 }
 
 .item img{
-  height: 240px;
+  height: 270px;
+  object-fit: cover;
+
 }
 
 .item p{
@@ -420,7 +423,6 @@ ul{
 .accordion-title {
   background-color: #fff;
   border: 1px solid #E5E5E5;
-  border-bottom: none;
   color: #333333;
   font-size: 14px;
   font-weight: bold;
@@ -429,6 +431,7 @@ ul{
   position: relative;
   cursor: pointer;
   user-select: none;
+  margin: 20px 0 0;
 }
 
 
@@ -471,7 +474,7 @@ ul{
   border-right: 1px solid #E5E5E5;
   font-size: 14px;
   color: #444444;
-  padding: 0 18px;
+  padding: 0px 18px;
   text-align: center;
   line-height: 0;
   height: 0;
@@ -879,12 +882,12 @@ margin: 0 auto 20px;
   }
 
   .grid{
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .swiper-slide{
-    max-width: 100%;
-    margin-right: 0px;
+    max-width: 90%;
+    margin: 0 5%;
   }
 
   .accordion-container{
@@ -893,6 +896,16 @@ margin: 0 auto 20px;
 
   .contact-text{
     padding: 0 15px;
+  }
+
+  .accordion-title{
+    font-size: 14px;
+    text-align: left;
+    padding: 12px 32px 12px 10px;
+  }
+
+  .accordion-title::before, .accordion-title::after {
+    right: 10px;
   }
 
 }
